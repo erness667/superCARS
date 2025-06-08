@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px">
+      <h4 class="card-title mt-3 text-center">Register</h4>
+      <form><label for="register-username">Username</label>
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+            <input
+              type="text"
+              class="form-control"
+              id="register-username"
+              aria-describedby="register-usernameHelp"
+              name="username"
+              placeholder="Insert your username"
+              [(ngModel)]="userRegister.username"
+            />
+        </div>
+        <label for="register-email">Email</label>
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">  <i class="fa fa-envelope"></i> </span>
+          </div>
+            <input
+              type="text"
+              class="form-control"
+              id="register-email"
+              aria-describedby="register-email"
+              name="email"
+              placeholder="Insert your email"
+              [(ngModel)]="userRegister.email"
+            />
+        </div>
+        <label for="register-phone">Phone</label>
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+          </div>
+            <input
+              type="tel"
+              class="form-control"
+              id="register-phone"
+              aria-describedby="register-phoneHelp"
+              name="phone"
+              placeholder="Insert your phone"
+              [(ngModel)]="userRegister.phone"
+            />
+        </div>
+        <label for="register-password">Password</label>
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+            <input
+              type="password"
+              class="form-control"
+              id="register-password"
+              aria-describedby="register-passwordHelp"
+              name="password"
+              placeholder="Insert your password"
+              [(ngModel)]="userRegister.password"
+            />
+        </div>
+        <label for="register-repeatpassword">Repeat password</label>
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+            <input
+              type="password"
+              class="form-control"
+              id="register-repeatpassword"
+              aria-describedby="register-Help"
+              name="repeatpassword"
+              placeholder="repeat password"
+              [(ngModel)]="userRegister.repeatpassword"
+              
+            />
+        </div>
+        <p class="text-center">Have an account? <a routerLink="../login">Log In</a></p>
+        <button type="submit" class="btn btn-block btn-primary" (click)="register()">
+          Register
+        </button>
+      </form>
+    </article>
+  </div>
+  <!-- card.// -->
+  
+</div>
